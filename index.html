@@ -1,34 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Blog preview card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <main class="container">
+    <div class="bg-yellow">
+      <div class="card">
+        <img src="assets/images/illustration-article.svg" alt="Blog preview image" class="card-image">
+        <div class="button" alt="点击学习" class="button">Learning</div>
+        <time class="time">Published 17 Dec 2025</time>
+        <h2 class="title">HTML & CSS fondations</h2>
+        <p class="description">These languages are the backbone of every website,defining structure, content,and presentation.</p>
+        <img src="assets/images/image-avatar.webp" alt="Author's avatar" class="author-avatar">
+        <span class="author-name">Greg Hooper</span>
+      </div>
+    </div>
+  </main>
 
-  Learning
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Ricochet2262">Ricochet</a>.
+  </footer>
 
-  Published 21 Dec 2023
-
-  HTML & CSS foundations
-
-  These languages are the backbone of every website, defining structure, content, and presentation.
-
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+<style>
+  .description {
+    overflow-wrap: break-word;
+    font-size: small;
+    color: hsl(228, 12%, 48%);
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  .title{
+    font-size: large;
+    font-weight: 700;
+  }
+  .time {
+    font-weight: 550;
+  }
+
+  .button {
+    padding: 4px 8px 4px 8px;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 800;
+    font-size: small;
+    display: block;
+    width: fit-content;
+    border-radius: 10%;
+    background-color: hsl(47, 88%, 63%);
+    user-select: none;
+  }
+.button:hover {
+    background-color: hsl(47, 88%, 50%);
+    cursor: pointer;
+  }
+  .button:active {
+    background-color: hsl(47, 88%, 40%);
+  }
+  .author-avatar {
+    vertical-align: middle;
+    border: 50%;
+    width: 40px;
+    display: inline-block;
+
+  }
+
+  .author-name {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+
+  .card-image {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 5%;
+    align-items: center;
+    display: block;
+  }
+
+  .card {
+    box-shadow: 8px 8px 0px hsl(0, 0%, 0%);
+    align-items: center;
+    border: solid 1px hsl(0, 0%, 0%);
+    border-radius: 5%;
+    width: 250px;
+    max-width: 90%;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+    padding: 18px;
+
+  }
+
+  .container {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  .bg-yellow {
+    display: flex;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    background-color: hsl(47, 88%, 63%);
+    width: 90%;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+
 </html>
